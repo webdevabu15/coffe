@@ -1,0 +1,41 @@
+$bg-dark:#2C343E;
+$dark:#333D4B;
+$secondary:#83888F;
+$light:#FEFCF7;
+$success:#0E8784;
+$success-light:#66D2CF;
+
+@mixin font($color,$f-size,$f-weight,$l-height){
+   @if $color == "dark"{
+    color: $dark;
+   }
+   @else if $color == "light"{
+    color: $light;
+   }
+   @else if $color == "secondary"{
+    color: $secondary;
+   }
+    color: $color;
+    font-family: 'Barlow', sans-serif;
+        font-size: $f-size;
+    font-style: normal;
+    font-weight: $f-weight;
+    line-height: $l-height;
+}
+
+@mixin button($bg-color,$btn-p,$width,$height,$border,$raidus){
+   @if $bg-color == "l-success"{
+    background-color: $success-light;
+    color: $light;
+   } 
+   @else if $bg-color == "d-success"{
+    background-color: $success;
+    color: $light;
+   }
+    width: $width;
+    height: $height;
+    padding: $btn-p;
+    border: $border;
+    border-radius: $raidus;
+    background-color: $bg-color;
+}

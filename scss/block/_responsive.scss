@@ -1,0 +1,15 @@
+@media only screen and (max-width: 768px) {
+    nav{
+        .nav__wrapper{
+           .menu{
+            display: none;
+           }
+        }
+    }
+    .banner{
+        background-image: none;
+        background-image: url("/images/Bitmap.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
